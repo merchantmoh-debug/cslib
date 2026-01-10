@@ -103,7 +103,7 @@ partial def dpll (f : Formula) (assignment : Assignment) (vars : List Var) : Opt
 
 -- 4. Soundness Verification
 
-/-- Key Lemma: If `dpll` returns a model, that model satisfies the formula. -/
+-- /-- Key Lemma: If `dpll` returns a model, that model satisfies the formula. -/
 -- theorem sound (f : Formula) (vars : List Var) (init : Assignment) :
 --     ∀ model, dpll f init vars = some model → Satisfies model f := by
 --    -- NOTE: Proving termination/correctness for 'partial' functions in Lean 4 requires
